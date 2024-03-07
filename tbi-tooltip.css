@@ -1,11 +1,11 @@
 .tbi-tooltip {
   font-family: monospace;
   outline: none;
-  cursor: help;
+  cursor: pointer;
   position: relative;
-  text-decoration: bold;
+  text-decoration: none;
   border-bottom: 1px !important;
-  font-weight: bold;
+  font-weight: 700;
 }
 .tbi-tooltip span {
   margin-left: -999em;
