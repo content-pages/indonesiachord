@@ -1,4 +1,3 @@
-//<![CDATA[ // Jangan diedit lagi! Nanti ERROR !! //
 var speed = 1;
 var disp = 0;
 var handle;
@@ -65,14 +64,12 @@ function tooglespeed() {
   if (disp == 0) {
     disp = 1;
     document.getElementById("speedscroll").style.display = "";
-    document.getElementById("speedtoogle").innerHTML =
-      '<svg viewBox="-8 -8 34 34"><path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z" fill="#222"/></svg>';
+    document.getElementById("speedtoogle").innerHTML ='<svg viewBox="-8 -8 34 34"><path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z" fill="#222"/></svg>';
     document.getElementById("speedtoogle");
   } else {
     disp = 0;
     document.getElementById("speedscroll").style.display = "none";
-    document.getElementById("speedtoogle").innerHTML =
-      '<svg viewBox="-9 -9 42 42"><path d="M6 2v6h.01L6 8.01 10 12l-4 4 .01.01H6V22h12v-5.99h-.01L18 16l-4-4 4-3.99-.01-.01H18V2H6zm10 14.5V20H8v-3.5l4-4 4 4zm-4-5l-4-4V4h8v3.5l-4 4z" fill="#222"/></svg>';
+    document.getElementById("speedtoogle").innerHTML ='<svg viewBox="-9 -9 42 42"><path d="M6 2v6h.01L6 8.01 10 12l-4 4 .01.01H6V22h12v-5.99h-.01L18 16l-4-4 4-3.99-.01-.01H18V2H6zm10 14.5V20H8v-3.5l4-4 4 4zm-4-5l-4-4V4h8v3.5l-4 4z" fill="#222"/></svg>';
     document.getElementById("speedtoogle");
   }
 }
