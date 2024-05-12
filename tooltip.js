@@ -32,7 +32,7 @@ var match,
   ],
   kuncigitarRegex = /A#|C#|D#|F#|G#|Ab|Bb|Db|Eb|Gb|A|B|C|D|E|F|G/g;
 $("#transup").click(function () {
-  $(".tbi-tooltip").each(function () {
+  $(".tbi-tooltip,.key").each(function () {
     for (
       var e = $(this).html(), i = "", a = e.split(kuncigitarRegex), c = 0;
       (match = kuncigitarRegex.exec(e));
@@ -47,10 +47,10 @@ $("#transup").click(function () {
     )).replace(/Bb/g, "A#")).replace(/Db/g, "C#")).replace(/Eb/g, "D#")),
       $(this)
         .html(i)
-        .removeClass("tbi-tooltip " + e)
-        .addClass("tbi-tooltip " + i);
+        .removeClass("tbi-tooltip,key " + e)
+        .addClass("tbi-tooltip,key " + i);
   });
-  $(".tbi-tooltip").each(function () {
+  $(".tbi-tooltip,.key").each(function () {
     var kunci = $(this).text().trim();
     var span_ = $(this).find("span");
     if (kunci.includes("/")) {
@@ -62,7 +62,7 @@ $("#transup").click(function () {
   });
 }),
   $("#transdown").click(function () {
-    $(".tbi-tooltip").each(function () {
+    $(".tbi-tooltip,.key").each(function () {
       for (
         var e = $(this).html(), i = "", a = e.split(kuncigitarRegex), c = 0;
         (match = kuncigitarRegex.exec(e));
@@ -77,10 +77,10 @@ $("#transup").click(function () {
       )).replace(/Bb/g, "A#")).replace(/Db/g, "C#")).replace(/Eb/g, "D#")),
         $(this)
           .html(i)
-          .removeClass("tbi-tooltip " + e)
-          .addClass("tbi-tooltip " + i);
+          .removeClass("tbi-tooltip,key " + e)
+          .addClass("tbi-tooltip,key " + i);
     });
-    $(".tbi-tooltip").each(function () {
+    $(".tbi-tooltip,.key").each(function () {
       var kunci = $(this).text().trim();
       var span_ = $(this).find("span");
       if (kunci.includes("/")) {
